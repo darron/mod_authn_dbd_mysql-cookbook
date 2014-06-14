@@ -22,6 +22,10 @@ include_recipe 'chef-sugar::default'
 
 include_recipe 'php5_apache2::default'
 
+package 'libaprutil1-dbd-mysql' do
+ action :install
+end
+
 template '/etc/apache2/conf-available/dbd_mysql.conf' do
   source 'dbd_mysql.conf.erb'
   owner 'root'
