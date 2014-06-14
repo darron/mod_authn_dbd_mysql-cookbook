@@ -1,4 +1,5 @@
 # encoding: utf-8
+require 'rspec/expectations'
 require 'chefspec'
 require 'chefspec/berkshelf'
 
@@ -22,7 +23,7 @@ RSpec.configure do |config|
   config.version = '12.04'
 
   # Use color output for RSpec
-  config.color_enabled = true
+  RSpec::Core::Configuration#color = true
 
   # Use documentation output formatter
   # config.formatter = :documentation

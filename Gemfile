@@ -7,9 +7,11 @@ gem 'foodcritic', '~> 3.0'
 gem 'rake'
 gem 'tailor'
 gem 'rubocop'
-gem 'chef-taste'
+# gem 'chef-taste'
 gem 'chef-sugar'
 gem 'knife-solo'
+gem 'ridley', '1.7.0'
+gem 'hashie', '2.1.1'
 
 group :integration do
   gem 'test-kitchen', '~> 1.0'

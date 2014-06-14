@@ -18,4 +18,15 @@
 # limitations under the License.
 #
 
-# Set meaningful node attributes here
+default['mysql']['host'] = '127.0.0.1'
+default['mysql']['port'] = '3306'
+default['mysql']['username'] = 'username_here'
+default['mysql']['pass'] = 'password_here'
+
+default['dbdmin'] = '2'
+default['dbdkeep'] = '4'
+default['dbdmax'] = '10'
+default['dbdexptime'] = '300'
+
+default['apache']['additional_modules'] = %w[ dbd authn_dbd ]
+default['apache']['additional_config'] = %w[ dbd_mysql ]

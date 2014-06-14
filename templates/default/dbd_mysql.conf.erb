@@ -1,0 +1,6 @@
+DBDriver mysql
+DBDParams "host=<%= node['mysql']['host'] %> port=<%= node['mysql']['port'] %> user=<%= node['mysql']['username'] %> pass=<%= node['mysql']['pass'] %>"
+DBDMin  <%= node['dbdmin'] %>
+DBDKeep <%= node['dbdkeep'] %>
+DBDMax  <%= node['dbdmax'] %>
+DBDExptime <%= node['dbdexptime'] %>

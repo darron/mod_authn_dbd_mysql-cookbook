@@ -8,3 +8,5 @@ version          '0.1.0'
 recipe           'mod_authn_dbd_mysql::default', 'Installs/configures mod_authn_dbd_mysql'
 
 depends 'chef-sugar'
+depends 'php5_apache2'
+depends 'apache2'
