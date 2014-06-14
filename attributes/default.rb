@@ -28,5 +28,5 @@ default['dbdkeep'] = '4'
 default['dbdmax'] = '10'
 default['dbdexptime'] = '300'
 
-default['apache']['additional_modules'] = %w[ dbd authn_dbd ]
-default['apache']['additional_config'] = %w[ dbd_mysql ]
+default['apache']['additional_modules'] = %w( dbd authn_dbd )
+default['apache']['additional_config'] = %w( dbd_mysql )
